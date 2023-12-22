@@ -1,0 +1,341 @@
+ @font-face {
+    font-family: 'Vanib';
+    src: url(./Vanib.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Westmount Bold';
+    src: url(./Westmount\ Bold.ttf) format('truetype');
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Vanib";
+}
+
+li, a, button {
+    font-weight: 800;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 5%;
+    background-color: #fb746a;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav_links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav_links li {
+    padding: 0px 40px;
+}
+
+.two a {
+    display: flex; 
+    align-items: center; 
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+    margin-right: 10px; 
+}
+.container {
+    display: flex;
+    background-size: cover; 
+    background-position: center; 
+    height: 800px;
+    margin-bottom: 0;
+}
+.left-section {
+    flex: 1;
+    background-image: url('./pastel.jpg'); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 750px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.right-section {
+     flex: 1; 
+    background-image: url('./pexels-robin-stickel-70497.jpg');
+    background-size: 170% 100%; 
+    background-position: center;
+    width: 100%; 
+    height: 750px;
+}
+
+.three {
+    font-size: 70px;
+    font-family: "Westmount Bold";
+    margin-bottom: 400px;
+    text-align: left !important;
+    margin-left: 0; 
+}
+
+.four {
+    font-weight: lighter;
+    font-family: sans-serif;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-top: -300px;
+}
+
+
+  
+  .button {
+    background-color: #fc7474;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    height: 40px;
+    width: 180px;
+    margin: 14px 12px;
+    cursor: pointer;
+     align-self: baseline;
+     margin-top: 30px;
+     font-weight: normal;
+     line-height: 7px;
+  }
+
+  .align-left {
+    text-align: center;
+  }
+.container1 {
+    display: flex;
+    flex-direction: row;
+    background-size: cover; 
+    background-position: center; 
+    height: 800px;
+    background-image: url('./arasu.jpg');
+    margin-top: -40px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+
+}
+.code-container {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+.code-container code {
+    display: block;
+    white-space: pre-wrap;
+}
+
+
+.right-section1 img {
+    width: 300px; /* Adjust the width as needed */
+    height: auto;
+    margin-bottom: 10px; 
+
+}
+
+.span-image-container {
+    width: 100%; /* Make it span the full width */
+    margin-bottom: 10px; /* Add spacing between the span image and the previous images */
+}
+
+.eight {
+    display: flex;
+    flex-direction: column;
+} 
+.pappu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left-section1 {
+    /* flex: 1; */
+    display: flex;
+   flex-wrap: wrap;
+    flex-direction: row;
+    justify-items: center;
+    /* position: relative; */
+    /* top: 20%;
+    left: 5%;*/
+   gap: 20px; 
+   height: fit-content;
+   width: fit-content;
+   margin-left: 30px;
+
+}
+
+.right-section2 {
+    border: 1px solid  rgb(255, 113, 113);
+    margin: 30px auto;
+    margin-left: 10px;
+    width: 500px;
+    height: 250px;
+    padding: 50px;
+    padding-top: 100px;
+    background-color: rgb(255, 113, 113);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.ten {
+    margin-top: -70px;
+    font-size: 18px;
+}
+.eleven {
+    margin-top: 22px;
+    font-size: 42px;
+}
+.twelve {
+    height: 25px;
+     width: 30px;
+     margin-left: 7px;
+}
+.teen {
+    margin-top: 5px;
+}
+
+
+/* Add this at the end of your existing CSS */
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav_links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav_links li {
+        padding: 10px 0;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .container1 {
+       display: flex;
+       flex-direction: column;
+       position: relative;
+       align-items: center;
+       justify-content: center;
+               
+    }
+
+    .left-section, 
+    .right-section{
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        position: relative;
+      
+    }
+    /* .right-section2 {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    } */
+
+
+    .three {
+        font-size: 40px;
+        margin-bottom: 200px;
+        text-align: center;
+
+    }
+
+    .four {
+        font-size: 16px;
+        margin-top: -100px;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 20px;
+    }
+.leftimg {
+
+    height: 200px;
+    width: 150px;
+    margin-top: -125px;
+}
+.pappu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+    /* .left-section1 {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: -300px;
+    } */
+
+    /* .right-section2 {
+        width: 100%;
+        text-align: center;
+        margin-top: 60px;
+    }  */
+}
+
+@media only screen and (max-width: 768px) {
+    .right-section2 {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        height: auto;
+        text-align: center;
+    }
+
+    .ten {
+        margin-top: 0;
+        font-size: 16px;
+    }
+
+    .eleven {
+        margin-top: 12px;
+        font-size: 32px;
+    }
+
+    .twelve {
+        height: 20px;
+        width: 24px;
+        margin-left: 5px;
+    }
+
+    .teen {
+        margin-top: 3px;
+    }
+}
